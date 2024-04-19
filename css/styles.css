@@ -1,0 +1,381 @@
+:root {
+    --primario: #5899E2;
+    --primariooscuro: #1B2845;
+    --secundario: #BFACB5;
+    --secundariooscuro: #444554;
+    --blanco: #FFF;
+    --negro: #000;
+    --fuente: 'Jersey 25', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+
+/**globales**/
+body {
+    background-color: var(--primariooscuro);
+    font-size: 1.5rem;
+    line-height: 0.6;
+}
+
+p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+h1,h3 {
+    text-align: center;
+    color: var(--secundario)
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align:left;
+
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+span{
+    font: 1rem sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/**banner**/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1rem var(--primariooscuro);
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    /* Añade una sombra */
+}
+
+.logo {
+    margin-right: auto;
+    /* Esto empujará el logo hacia la derecha */
+    width: 15rem;
+    /* Ancho del contenedor del logo */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+.logo img {
+    max-width: 100%;
+    /* Asegura que la imagen del logo no se salga del contenedor */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+.titulo {
+    margin-right: auto;
+}
+
+
+/**navegacion**/
+nav {
+    background-color: var(--primario);
+    /* Color de fondo del menú */
+    border: 1rem var(--primariooscuro);
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    /* Añade una sombra */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Usa Flexbox para alinear los elementos */
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+    /* Espacio entre elementos del menú */
+    position: relative;
+}
+
+/**submenues**/
+nav ul li ul {
+    display: none;
+    /* Oculta los submenús por defecto */
+    position: absolute;
+    /* Coloca los submenús de manera absoluta */
+    top: 100%;
+    /* Ajusta la posición respecto al li padre */
+    left: 0;
+    background-color: var(--primario);
+    /* Color de fondo del submenú */
+    padding: 10px 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+    /* Muestra los submenús al pasar el ratón */
+}
+
+nav ul li ul li {
+    margin-right: 0;
+    /* Ajusta el margen de los elementos del submenú */
+}
+
+nav ul li ul li a {
+    color: #fff;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    background-color: var(--secundariooscuro);
+}
+
+/**termina submenues**/
+
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Elimina el margen del último elemento */
+}
+
+nav ul li a {
+    text-decoration: none;/* Quita la subrayado del enlace */
+    color: var(--blanco);/* Color del texto del enlace */
+    padding: 10px;/* Espacio dentro del enlace */
+    display: block;/* Convierte el enlace en un bloque para ocupar todo el espacio del li */
+
+}
+
+nav ul li a:hover {
+    background-color: var(--secundariooscuro);
+    /* Cambia el color de fondo al pasar el ratón */
+}
+
+/**navegacion termina**/
+
+
+
+aside {
+    width: 20%;
+    /* Establece el 30% del ancho de la página */
+    float: right;
+    /* Hace que el aside esté a la izquierda */
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Color de fondo opcional */
+}
+
+/**main main main main main main main main main main main main main main**/
+main {
+    width: 60%;/* El 70% restante del ancho de la página */
+    display: inline-block; 
+    padding: 0.5rem;
+        display: inline-block; 
+
+}
+
+
+
+
+section{
+    display: inline-block; 
+    
+}
+
+
+.loc{
+    background-color:#011638;
+    border: #5899E2;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 1rem var(--primario);
+}
+
+
+.producto{
+    display: flex;
+}
+.descripcion{
+    flex: 60;
+    order: 2;
+    
+}
+
+.descripcion p {
+    margin-top: 0.5; /* Reducir el margen superior del párrafo */
+    margin-top: 0.5rem; /* Espacio superior */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+    margin-left: 0rem; /* Sangría a la izquierda */
+    text-indent: -1rem; /* Negativo para compensar la sangría */
+    line-height: 1.5; /* Altura de línea */
+    
+
+}
+.descripcion h2 {
+    margin: 0.5rem 0.5rem 0; /* Margen en todos los lados excepto en la parte inferior */
+    border: 0.3rem solid #000; /* Borde sólido de 0.3rem de grosor y color negro */
+    padding: 0.3rem;
+    text-align: center; /* Centrar el texto horizontalmente */
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centrar verticalmente los elementos flexibles */
+    background-color: var(--primario);
+    box-shadow: 0 0.2rem 0.3rem var(--primario);
+}
+.descripcion span{
+    margin-left: 0.5rem
+
+}
+
+.foto{
+    flex: 40;
+
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.imagen-grande {
+    max-width: 50%;
+    max-height: 100%;
+    image-rendering: auto;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.espacio{
+    background-color: var(--fuente);
+    position: relative;
+}
+.espacio h3{
+    padding: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    
+}
+.espacio p{
+    padding: 0.5rem;
+    width: 70%;
+    line-height: 1.5; /* Altura de línea */
+
+}
+.espacio img {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    width: 50px; /* Ancho del SVG */
+    height: auto; /* Altura automática proporcional al ancho */
+}
+
+
+.oculto {
+    display: none;
+}
+
+
+
+/**article**/
+article {
+    width: 20%;/* Establece el 30% del ancho de la página */
+    float: left;/* Hace que el aside esté a la izquierda */
+    padding: 0px;
+    background-color: var(--secundariooscuro);/* Color de fondo opcional */
+    border-style: 10rem var(--blanco);
+    box-shadow: 0 1rem 1.5rem rgba(240, 233, 233, 0.1);
+    border-radius: 0.3rem;
+    
+}
+
+article ul {
+    
+    list-style-type: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+article li {
+    margin-bottom: 10px;
+    /* Espacio entre elementos del menú */
+}
+
+article a {
+    display: block;/* Convierte los enlaces en bloques */
+    padding: 10px;/* Espacio alrededor de cada enlace */
+    text-decoration: none;/* Quita la decoración del enlace */
+    color: var(--blanco);/* Color del texto del enlace */
+    background-color: var(--primariooscuro);/* Color de fondo del enlace */
+
+}
+
+article a:hover {
+    background-color: var(--primario);
+    /* Cambia el color de fondo al pasar el ratón */
+}

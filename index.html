@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="img/Amway_(logo).svg.png" alt=""></div>
+        <h1 class="titulo">Detalles y precio de productos</h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Servicio 1</a></li>
+                    <li><a href="#">Servicio 2</a></li>
+                    <li><a href="#">Servicio 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <article>
+        <ul id="categorias">
+            <li><a href="#" data-target="loc">L.O.C.</a></li>
+            <li><a href="#" data-target="Pursue">Pursue Desinfectante</a></li>
+            <li><a href="#" data-target="Dish">Dish Drops</a></li>
+            <li><a href="#" data-target="SA8">SA8</a></li>
+            <!-- Agrega más opciones si es necesario -->
+        </ul>
+    </article>
+    <main>
+        <section id="contenido-loc" class="loc">
+            <div class="producto">
+                <div class="descripcion">
+                    <h2>L.O.C.<span>Limpiador Concentrado</span></h2>
+                    <p>- Limpia grasa y suciedad acumulada de cualquier tipo de superficie<span>lavables con agua</span>
+                    incluidas superficies de baldosas selladas, madera, vinilo, piedra, linóleo y cerámica.<br>
+                    <p>- Quita manchas difíciles.<br>
+                    <p>- No se necesita enjuagar y se retira fácilmente.<br>
+                    <p>- Contiene ingredientes naturales y seguros, como aceite de coco y fragancias naturales que son
+                    suaves para tus manos, pero duros con las manchas.<br>
+                    <p>- No daña el planeta. </p>
+                </div>
+                <div class="foto">
+                    <img class="imagen" src="img/loc-remo.png" alt="foto">
+                    <div class="overlay">
+                        <img class="imagen-grande" src="img/loc-remo.png" alt="foto grande">
+                        <span class="cerrar">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="espacio">
+                <h3>Producto Concentrado que rinde 10 litros</h3>
+                <p>No es un producto <span>desinfectante</span></p>
+                <img class="svg-like" src="svg/like-svgrepo-com.svg" alt="Like">
+
+            </div>
+        </section>
+
+        <section id="contenido-Pursue" class="loc oculto">
+            <div class="producto">
+                <div class="descripcion">
+                    <h2>Pursue<span>Desinfectante Concentrado</span></h2>
+                    <p>- Mata el 99.9 % de los gérmenes.<br>
+                    <p>- Limpia, desinfecta y desodoriza.<br>
+                    <p>- Elimina de manera segura los microorganismos de la cocina.<br>
+                    <p>- Puede ser usado en la industria alimenticia.<br>
+                    <p>- Apto para superficies en contacto con los alimentos, sin necesidad de enjuagar.</p>
+                    <p>- Reduce la contaminación cruzada de superficies.</p>
+                    <p>- No contiene fragancia ni colorantes</p>
+                    <p>- No es inflamable.</p>
+                </div>
+                <div class="foto">
+                    <img class="imagen" src="img/persue.png" alt="foto">
+                    <div class="overlay">
+                        <img class="imagen-grande" src="img/persue.png" alt="foto grande">
+                        <span class="cerrar">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="espacio">
+                <h3>Producto Concentrado que rinde 10 litros</h3>
+                <p>- Para superficies que tienen contacto constante con alimentos: diluye 1/4 de tapa (5 ml) en un litro de agua. <span>Rinde 200 litros</span></p>
+                <img class="svg-like" src="svg/like-svgrepo-com.svg" alt="Like">
+
+            </div>
+        </section>
+
+        <section id="contenido-Dish" class="loc oculto">
+            <div class="producto">
+                <div class="descripcion">
+                    <h2>Dish Drops<span>Detergente Concentrado</span></h2>
+                    <p>- Elimina la grasa y los residuos de tus vajillas y utensilios de cocina<br>
+                    <p>- Contiene aloe vera y extracto de shiso que ayudan a evitar la resequedad de tus manos<br>
+                    <p>- Dermatológicamente probado.<br>
+                </div>
+                <div class="foto">
+                    <img class="imagen" src="img/det.png" alt="foto">
+                    <div class="overlay">
+                        <img class="imagen-grande" src="img/det.png" alt="foto grande">
+                        <span class="cerrar">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="espacio">
+                <h3>Producto Concentrado que rinde 10 litros</h3>
+                <p>- Este producto no puede ser usado en máquina lavavajillas. Hará demasiada espuma, que se saldrá de la máquina.</p>
+                <img class="svg-like" src="svg/like-svgrepo-com.svg" alt="Like">
+
+            </div>
+        </section>
+
+        <section id="contenido-SA8" class="loc oculto">
+            <div class="producto">
+                <div class="descripcion">
+                    <h2>SA8<span>Jabon liquido Concentrado</span></h2>
+                    <p>- Fórmula quitamanchas con aroma floral para dejar tu ropa limpia y suave.<br>
+                    <p>- Sus ingredientes no dañan tus prendas ni el planeta.<br>
+                    <p>- Seguro y efectivo en todas las lavadoras, incluso las de alta eficiencia (HE).<br>
+                    <p>- Se enjuaga bien a cualquier temperatura, incluso en agua fría.<br>
+                    <p>- No deja residuos que pueden irritar la piel sensible.<br>
+                    <p>- Dermatológicamente probado.<br>
+                </div>
+                <div class="foto">
+                    <img class="imagen" src="img/jab.png" alt="foto">
+                    <div class="overlay">
+                        <img class="imagen-grande" src="img/jab.png" alt="foto grande">
+                        <span class="cerrar">&times;</span>
+                    </div>
+                </div>
+                <div class="espacio">
+                    <h3>Producto Concentrado Rinde más</h3>
+                    <p>- Cantidad de uso estándar: 10 ml  (1/2 tapa) por cada 2 kg de tejido o 30 l de agua <span>Rinde 100 litros</span><br>
+                    - Para máquinas de carga superior y frontal: (6 kg) de ropa con suciedad normal diluye 20 ml (1 tapa) <span>Rinde 50 Litros</span><br>- Cargas grandes (6 kg) de ropa muy sucia diluye 30 ml (1 1/2 tapas).</p>
+                    <img class="svg-like" src="svg/like-svgrepo-com.svg" alt="Like">
+    
+                </div>
+            </div>
+            <div class="espacio">
+                <h3>Producto Concentrado Rinde más</h3>
+                <p>- Cantidad de uso estándar: 10 ml  (1/2 tapa) por cada 2 kg de tejido o 30 l de agua <span>Rinde 100 litros</span><br>
+                - Para máquinas de carga superior y frontal: (6 kg) de ropa con suciedad normal diluye 20 ml (1 tapa) <span>Rinde 50 Litros</span><br>- Cargas grandes (6 kg) de ropa muy sucia diluye 30 ml (1 1/2 tapas).</p>
+                <img class="svg-like" src="svg/like-svgrepo-com.svg" alt="Like">
+
+            </div>
+        </section>
+    </main>
+
+
+    <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti et quis commodi hic eum sit alias
+            id saepe nemo, blanditiis iste sed reiciendis quaerat fuga a possimus veritatis explicabo.</p>
+    </aside>
+
+
+
+
+    <footer>
+        <!-- Contenido del pie de página aquí -->
+    </footer>
+</body>
+
+</html>
